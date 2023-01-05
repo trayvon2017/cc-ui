@@ -1,5 +1,5 @@
 {
-  "name": "dc-ui",
+  "name": "cc-ui",
   "version": "0.1.0",
   "description": "dcUI组件库",
   "keywords": [
@@ -10,10 +10,10 @@
     "ui",
     "Button"
   ],
-  "homepage": "https://github.com/trayvon2017/dc-ui",
+  "homepage": "https://github.com/trayvon2017/cc-ui",
   "repository": {
     "type": "git",
-    "url": "git@github.com:trayvon2017/dc-ui.git"
+    "url": "git@github.com:trayvon2017/cc-ui.git"
   },
   "main": "lib/dcui.umd.min.js",
   "scripts": {

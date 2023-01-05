@@ -1,12 +1,12 @@
 <template>
-  <div class="dc-button">
+  <div class="cc-button">
     <slot></slot>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'dc-button',
+  name: 'cc-button',
   props: {
     type: String
   }
@@ -14,7 +14,7 @@ export default {
 </script>
 
 <style>
-  .dc-button {
+  .cc-button {
       display: inline-block;
       padding: 3px 6px;
       background: #000;

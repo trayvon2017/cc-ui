@@ -1,4 +1,4 @@
-# dc-ui
+# cc-ui
 
 ## Project setup
 ```
