@@ -13,7 +13,7 @@ export default {
 }
 </script>
 
-<style scoped>
+<style>
   .dc-button {
       display: inline-block;
       padding: 3px 6px;
