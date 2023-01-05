@@ -1,12 +1,12 @@
 <template>
-  <div class="cc-button">
+  <div class="von-button">
     <slot></slot>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'cc-button',
+  name: 'von-button',
   props: {
     type: String
   }
@@ -14,7 +14,7 @@ export default {
 </script>
 
 <style>
-  .cc-button {
+  .von-button {
       display: inline-block;
       padding: 3px 6px;
       background: #000;

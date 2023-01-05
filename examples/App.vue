@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <cc-button>cc-ui</cc-button>
+    <von-button>von-ui</von-button>
     <img alt="Vue logo" src="./assets/logo.png">
     <HelloWorld msg="Welcome to Your Vue.js App"/>
   </div>
