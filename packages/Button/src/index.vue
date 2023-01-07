@@ -1,3 +1,10 @@
+<!--
+ * @Description: 
+ * @Date: 2023-01-06 17:04:16
+ * @LastEditors: cfb
+ * @LastEditTime: 2023-01-07 12:27:01
+ * @FilePath: /von-ui/packages/Button/src/index.vue
+-->
 <template>
   <div class="von-button">
     <slot></slot>
@@ -12,12 +19,3 @@ export default {
   }
 }
 </script>
-
-<style>
-  .von-button {
-      display: inline-block;
-      padding: 3px 6px;
-      background: #000;
-      color: #fff;
-  }
-</style>
