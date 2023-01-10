@@ -18,7 +18,7 @@ themes.forEach(theme => {
     return src(`../${theme}/*.scss`).
       pipe(sass()).
       pipe(autoprefixer()).
-      pipe(cssmin()).
+      // pipe(cssmin()).
       pipe(dest(`../../lib/themes/${theme}`))
   }
   compileTasks.push(compiler)

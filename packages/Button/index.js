@@ -6,7 +6,7 @@
  * @FilePath: /von-ui/packages/Button/index.js
  */
 // 导入组件，组件必须声明 name
-import VonButton from './src'
+import VonButton from './src/button.vue'
 
 // 为组件提供 install 安装方法，供按需引入
 VonButton.install = function (Vue) {

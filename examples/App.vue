@@ -1,18 +1,20 @@
 <template>
   <div id="app">
-    <von-button>von-ui</von-button>
+    <von-button type="primary">primary</von-button>
+    <von-button type="success">success</von-button>
+    <von-button type="warning">warning</von-button>
+    <von-button type="danger">danger</von-button>
+    <von-button type="info">info</von-button>
     <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <i class="von-icon-guide"></i>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
   }
 }
 </script>

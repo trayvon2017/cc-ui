@@ -1,0 +1,40 @@
+@import "common/var.scss";
+
+@font-face {
+  font-family: "von-icons"; /* Project id 3859154 */
+  src: url('#{$--font-path}/iconfont.woff2?t=1673356697316') format('woff2'),
+       url('#{$--font-path}/iconfont.woff?t=1673356697316') format('woff'),
+       url('#{$--font-path}/iconfont.ttf?t=1673356697316') format('truetype');
+  font-weight: normal;
+  font-display: $--font-display;
+  font-style: normal;
+}
+
+[class^="von-icon-"], [class*=" von-icon-"] {
+  font-family: "von-icons" !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  vertical-align: baseline;
+  display: inline-block;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.von-icon-info:before {
+  content: "\e61a";
+}
+
+.von-icon-guide:before {
+  content: "\e6c4";
+}
+
+.von-icon-warn:before {
+  content: "\e73e";
+}
+

@@ -6,7 +6,7 @@
  * @FilePath: /von-ui/packages/Button/src/index.vue
 -->
 <template>
-  <div class="von-button">
+  <div class="von-button" :class="[type ? 'von-button--' + type : '']">
     <slot></slot>
   </div>
 </template>
@@ -15,7 +15,10 @@
 export default {
   name: 'von-button',
   props: {
-    type: String
+    type: {
+      type: String,
+      default: ''
+    },
   }
 }
 </script>

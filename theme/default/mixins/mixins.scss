@@ -1,0 +1,20 @@
+@import "./config.scss";
+@mixin b($block) {
+    $B: $namespace + '-' + $block;
+    .#{$B} {
+        @content;
+    }
+}
+@mixin m($modifier) {
+    // 这里的 & 是引用父类选择器
+    $selector: &;
+    $currentSelector: "";
+    @each $unit in $modifier {
+      $currentSelector: #{$currentSelector + $selector + $modifier-separator + $unit + ","};
+    }
+    @at-root{
+      #{$currentSelector} {
+        @content;
+      }
+    }
+  }
