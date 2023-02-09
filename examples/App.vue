@@ -2,7 +2,7 @@
  * @Description: 
  * @Date: 2023-02-09 10:14:41
  * @LastEditors: cfb
- * @LastEditTime: 2023-02-09 18:24:21
+ * @LastEditTime: 2023-02-09 19:20:52
  * @FilePath: /von-ui/examples/App.vue
 -->
 <template>
@@ -13,17 +13,17 @@
     <von-button type="danger">danger</von-button>
     <von-button type="info">info</von-button> -->
     <von-slider>
-      <ul style="height: 100%; overflow: auto">
-        <li>你好1h</li>
-        <li>你好2h</li>
-        <li>你好3h</li>
-        <li>你好4h</li>
-        <li>你好5h</li>
-        <li>你好6h</li>
-        <li>你好7h</li>
-        <li>你好8h</li>
-        <li>你好9h</li>
-        <li>你好10h</li>
+      <ul style="height: 100%; overflow: auto; margin: 0; padding: 0">
+        <li>item1.</li>
+        <li>item2.</li>
+        <li>item3.</li>
+        <li>item4.</li>
+        <li>item5.</li>
+        <li>item6.</li>
+        <li>item7.</li>
+        <li>item8.</li>
+        <li>item9.</li>
+        <li>item10.</li>
       </ul>
     </von-slider>
   </div>

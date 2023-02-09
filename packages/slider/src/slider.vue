@@ -2,7 +2,7 @@
  * @Description: 
  * @Date: 2023-01-06 17:04:16
  * @LastEditors: cfb
- * @LastEditTime: 2023-02-09 18:44:04
+ * @LastEditTime: 2023-02-09 19:27:39
  * @FilePath: /von-ui/packages/slider/src/slider.vue
 -->
 <template>
@@ -39,6 +39,7 @@ export default {
     initChildEle() {
       this.childEle = this.$refs.sliderView.firstElementChild;
       if (this.childEle) {
+        this.childEle.style.overflow = "hidden";
         this.childEle.addEventListener("touchstart", this.childTouchHandler);
         this.childEle.addEventListener("touchmove", this.childTouchHandler);
         this.childEle.addEventListener("touchend", this.childTouchHandler);
@@ -46,7 +47,9 @@ export default {
     },
     childTouchHandler(event) {
       console.log(event);
-      event.stopPropagation();
+      if (this.childEle.scrollTop > 0) {
+        event.stopPropagation();
+      }
     },
     handleTouchstart(e) {
       console.log(e.target);
@@ -54,6 +57,9 @@ export default {
       this.originHeight = this.currentHeight;
     },
     handleTouchmove(e) {
+      if (this.childEle.scrollTop > 0) {
+        return;
+      }
       // console.log(e);
       // const currentX = e.touches[0].clientX;
       const currentY = e.touches[0].clientY;
@@ -68,9 +74,20 @@ export default {
       }
       // this.currentHeight ? tempHeight >= this.maxHeight ? tempHeight :
       this.$refs.sliderView.style.height = this.currentHeight + "px";
+      console.log(this.currentHeight);
+      if (this.currentHeight !== 200) {
+        this.childEle.style.overflow = "hidden";
+      }
     },
     hanldeTouchend() {
       this.startY = 0;
+      if (this.currentHeight === 200) {
+        this.childEle.style.overflow = "auto";
+      } else if (this.currentHeight < 150) {
+        this.$refs.sliderView.style.height = this.minHeight + "px";
+      } else if (this.currentHeight >= 150) {
+        this.$refs.sliderView.style.height = this.maxHeight + "px";
+      }
     },
   },
 };
