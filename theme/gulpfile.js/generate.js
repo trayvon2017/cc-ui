@@ -2,7 +2,7 @@
  * @Description: 
  * @Date: 2023-01-07 14:10:11
  * @LastEditors: cfb
- * @LastEditTime: 2023-01-07 14:31:52
+ * @LastEditTime: 2023-02-09 10:31:50
  * @FilePath: /von-ui/theme/gulpfile.js/generate.js
  */
 const fs = require('fs')
@@ -11,6 +11,7 @@ const {series} = require('gulp')
 const {fileExists, themes, basePath} = require('./util')
 
 const components = require('../../components.json')
+console.log(components)
 const generateTasks = []
 themes.forEach(theme => {
   const generator = function (cb) {

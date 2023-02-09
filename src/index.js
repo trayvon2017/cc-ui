@@ -2,15 +2,17 @@
  * @Description: 
  * @Date: 2023-01-06 17:12:56
  * @LastEditors: cfb
- * @LastEditTime: 2023-01-07 12:25:52
+ * @LastEditTime: 2023-02-09 10:35:41
  * @FilePath: /von-ui/src/index.js
  */
 // 导入button组件
 import VonButton from '../packages/button'
+import VonSlider from '../packages/slider'
 
 // 组件列表
 const components = [
-  VonButton
+  VonButton,
+  VonSlider
 ]
 
 // 定义 install 方法，接收 Vue 作为参数。如果使用 use 注册插件，那么所有的组件都会被注册

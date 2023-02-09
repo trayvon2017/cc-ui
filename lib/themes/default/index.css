@@ -110,3 +110,9 @@
   background-color: #909399;
   border-color: #909399;
 }
+
+.von-slider {
+  position: fixed;
+  height: 100px;
+  background-color: antiquewhite;
+}
